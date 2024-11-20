@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>videoMobile</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/684baec2fe.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -13,13 +15,11 @@
     <header>
         <div class="logo">
             <i class="fa-brands fa-youtube"></i>
-            <span class="title">Yutube</span>
+            <span class="title">Youtube</span>
         </div>
-        <div class="icon">
-            <ul>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                <li><i class="fa-solid fa-list"></i></li>
-            </ul>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
         </div>
     </header>
 
@@ -28,6 +28,8 @@
         <video controls src="video/230248_tiny.mp4" width="400"></video>
     </section>
 
+    <div class="infoAndUpNext">
+         
     <!--vidon info-->
     <section class="info">
 
@@ -39,18 +41,21 @@
                 <li>#그리스도의비밀</li>
             </ul>
             <div class="titleAndButton">
-                <span class="title">주일 유치부 예배영상</span>
-                <button class="moreBtn"></button>
+                <span class="title">교회학교 유치부 주일 예배영상: 착한사마리아인 설교를 통해 남유익에 대해 배워보고, 내가 할 수 있는 남에게 유익주는 방법을 말해봄</span>
+                <button class="moreBtn">
+                    <i class="fas fa-caret-down"></i>
+                </button>
             </div>
             <span class="views">1M views 1 week ago</span>
         </div>
         <!--actions-->
-        <div class="actions"></div>
-        <li><button><i class="fas fa-thumbs-up"></i><span>1K</span></button></li>
-        <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
-        <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
-        <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
-        <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+        <ul class="actions">
+            <li><button><i class="active fas fa-thumbs-up"></i><span>1K</span></button></li>
+            <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+            <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+            <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+            <li><button><i class="fab fa-font-awesome-flag"></i><span>Report</span></button></li>
+        </ul>
         <!--channel-->
         <div class="channel">
             <div class="metadata">
@@ -60,7 +65,7 @@
                     <span class="subscribers">1M subscribe</span>
                 </div>
             </div>
-            <button class="subscribe"></button>
+            <button class="subscribe">subscribe</button>
         </div>
     </section>
 
@@ -69,7 +74,8 @@
         <span class="title">Up next</span>
         <ul>
             <li class="item">
-                <img src="image/noon of light.png" width="150" alt="">
+                <div class="img"><img src="image/noon of light.png" width="150" alt="">
+                </div>
                 <div class="info">
                     <span class="title">화요일새벽예배</span>
                     <span class="name">김환희 목사님</span>
@@ -80,7 +86,8 @@
                 </button>
             </li>
             <li class="item">
-                <img src="image/noon of light.png" width="150" alt="">
+                <div class="img"><img src="image/noon of light.png" width="150" alt="">
+                </div>
                 <div class="info">
                     <span class="title">삼일예배</span>
                     <span class="name">김환희 목사님</span>
@@ -91,7 +98,8 @@
                 </button>
             </li>
             <li class="item">
-                <img src="image/noon of light.png" width="150" alt="">
+                <div class="img"><img src="image/noon of light.png" width="150" alt="">
+                </div>
                 <div class="info">
                     <span class="title">금요철야</span>
                     <span class="name">김환희 목사님</span>
@@ -101,11 +109,12 @@
                     <i class="fas fa-ellipsis-v"></i>
                 </button>
             </li>
-            
-        </ul>
 
+        </ul>
     </section>
 
+    </div>
+   
 </body>
 
 </html>
